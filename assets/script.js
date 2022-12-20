@@ -77,6 +77,7 @@ const changeHours = (data, container, classes, listenersContainers) => {
             }
         }
     }
+
 }
 
 const colorSections = () => {
@@ -84,7 +85,7 @@ const colorSections = () => {
     const titles = document.getElementsByClassName('title');
 
 
-    for(let i = 0; i < titles.length; i++) {
+    for (let i = 0; i < titles.length; i++) {
         switch (titles[i].textContent) {
             case 'Work':
                 section[i].className = 'section-container work-section'
