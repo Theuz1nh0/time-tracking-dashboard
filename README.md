@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [URL](https://github.com/Theuz1nh0/time-tracking-dashboard)
+- Live Site URL: [URL](https://theuz1nh0.github.io/time-tracking-dashboard/)
 
 ## My process
 
