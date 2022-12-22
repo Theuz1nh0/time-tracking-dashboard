@@ -52,7 +52,7 @@ const changeHours = (data, container, classes, listenersContainers) => {
         for (let i = 0; i < data.length; i++) {
             classes[0][i].textContent = data[i].title
             classes[1][i].textContent = `${data[i].timeframes.daily.current}hrs`
-            classes[2][i].textContent = `Last Week - ${data[i].timeframes.daily.previous}hrs`
+            classes[2][i].textContent = `Last Day - ${data[i].timeframes.daily.previous}hrs`
         }
     } else if (weeklyContainer) {
         for (let i = 0; i < data.length; i++) {
@@ -64,7 +64,7 @@ const changeHours = (data, container, classes, listenersContainers) => {
         for (let i = 0; i < data.length; i++) {
             classes[0][i].textContent = data[i].title
             classes[1][i].textContent = `${data[i].timeframes.monthly.current}hrs`
-            classes[2][i].textContent = `Last Week - ${data[i].timeframes.monthly.previous}hrs`
+            classes[2][i].textContent = `Last Month - ${data[i].timeframes.monthly.previous}hrs`
         }
     }
 
