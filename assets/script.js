@@ -1,13 +1,15 @@
 const jsonLink = "./assets/data.json"
 
-const request = new XMLHttpRequest();
-request.open('GET', jsonLink);
-request.responseType = 'json';
-request.send();
-request.onload = () => {
-    const data = request.response;
-    contentsOfContainers(data)
+const request = async () => {
+    try {
+        const data = await fetch(jsonLink).then(res => res.json())
+        contentsOfContainers(data)
+    } catch (err) {
+        console.error(err)
+    }
 }
+
+request()
 
 // function where it takes the .json content and uses it to create the content of the containers on the page
 const contentsOfContainers = (data) => {
